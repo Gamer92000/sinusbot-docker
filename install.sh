@@ -58,6 +58,12 @@ EOT
 	echo 'YoutubeDLPath = "/usr/local/bin/yt-dlp"' >> config.ini.configured
 	echo "Successfully installed yt-dlp"
 	;;
+"deno")
+	echo "Downloading Deno..."
+	curl -Lo /tmp/deno.zip "https://github.com/denoland/deno/releases/latest/download/deno-x86_64-unknown-linux-gnu.zip"
+	unzip -d /usr/local/bin /tmp/deno.zip
+	echo "Successfully installed deno"
+	;;
 "teamspeak")
 	echo "Installing TeamSpeak Client..."
 	# Get latest TeamSpeak client download URL
