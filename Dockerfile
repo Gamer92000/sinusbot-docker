@@ -57,6 +57,9 @@ RUN bash install.sh sinusbot
 # Download/Install yt-dlp
 RUN bash install.sh yt-dlp
 
+# Download/Install deno
+RUN bash install.sh deno
+
 # Download/Install Text-to-Speech
 RUN bash install.sh text-to-speech
 
